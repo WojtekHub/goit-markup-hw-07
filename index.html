@@ -17,7 +17,7 @@
       referrerpolicy="no-referrer"
     /> -->
     <link rel="stylesheet" href="./css/modern-normalize.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
 
     <title>Studio</title>
   </head>
@@ -27,50 +27,50 @@
     <div class="is-hidden" data-modal>
       <div class="backdrop">
         <div class="window">
-          <button class="close-button" data-modal-close>X</button>
-          <form class="form-card">
-            <p class="title-form">Zostaw swoje dane w formularzu poniżej</p>
-            <label class="label-window">
-              <span class="field-name">Imie</span>
+          <button class="window__closeButton" data-modal-close>X</button>
+          <form class="window__form">
+            <p class="window__title">Zostaw swoje dane w formularzu poniżej</p>
+            <label class="window__label">
+              <span class="window__labelName">Imie</span>
 
-              <svg class="icon-form" width="12" height="12">
+              <svg class="window__icon" width="12" height="12">
                 <use href="./images/icons.svg#icon-user"></use>
               </svg>
               <input
-                class="window-form"
+                class="window__input"
                 type="text"
                 name="customer_name"
                 placeholder=""
               />
             </label>
-            <label class="label-window">
-              <span class="field-name">Telefon</span>
-              <svg class="icon-form" width="13" height="13">
+            <label class="window__label">
+              <span class="window__labelName">Telefon</span>
+              <svg class="window__icon" width="13" height="13">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
               <input
-                class="window-form"
+                class="window__input"
                 type="tel"
                 name="phone_number"
                 placeholder=""
               />
             </label>
-            <label class="label-window">
-              <span class="field-name">Email</span>
-              <svg class="icon-form" width="15" height="12">
+            <label class="window__label">
+              <span class="window__labelName">Email</span>
+              <svg class="window__icon" width="15" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               <input
-                class="window-form"
+                class="window__input"
                 type="email"
                 name="customer_email"
                 placeholder=""
               />
             </label>
-            <label class="label-window">
-              <span class="field-name">Komentarz</span>
+            <label class="window__label">
+              <span class="window__labelName">Komentarz</span>
               <textarea
-                class="textarea-window-form"
+                class="window__textInput"
                 type="textarea"
                 name="comment_form"
                 placeholder="Wprowadź tekst"
@@ -79,22 +79,24 @@
 
             <input
               id="id-checkbox"
-              class="input-box"
+              class="window__checkbox"
               type="checkbox"
               name="rule_form"
               required
               value="true"
             />
 
-            <label class="label-box" for="id-checkbox">
+            <label class="window__labelCheckbox" for="id-checkbox">
               <span class="check-box-form"
                 >Oświadczam iż akceptuję
-                <a href="" class="link-reg-form">Regulamin</a> i
-                <a href="" class="link-reg-form">Politykę Prywatności.</a></span
+                <a href="" class="window__txtReg">Regulamin</a> i
+                <a href="" class="window__txtReg"
+                  >Politykę Prywatności.</a
+                ></span
               ></label
             >
 
-            <button type="submit" class="button-form">Wyślij</button>
+            <button type="submit" class="window__buttonForm">Wyślij</button>
           </form>
         </div>
       </div>
@@ -128,24 +130,24 @@
 
           <ul class="header-contact">
             <li class="header-contact__item">
-              <div class="header-contact__hov">
-                <svg class="header-contact__icon" width="16" height="12">
-                  <use href="./images/icons.svg#icon-envelope"></use>
-                </svg>
-                <a class="header-contact__nav" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </div>
+              <a class="header-contact__nav" href="mailto:info@devstudio.com"
+                ><span
+                  ><svg class="header-contact__icon" width="16" height="12">
+                    <use
+                      href="./images/icons.svg#icon-envelope"
+                    ></use></svg></span
+                >info@devstudio.com</a
+              >
             </li>
             <li class="header-contact__item">
-              <div class="header-contact__hov">
-                <svg class="header-contact__icon" width="16" height="12">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                <a class="header-contact__nav" href="tel:+48111111111"
-                  >+48 111 111 111</a
-                >
-              </div>
+              <a class="header-contact__nav" href="tel:+48111111111"
+                ><span>
+                  <svg class="header-contact__icon" width="16" height="12">
+                    <use
+                      href="./images/icons.svg#icon-smartphone"
+                    ></use></svg></span
+                >+48 111 111 111</a
+              >
             </li>
           </ul>
         </div>

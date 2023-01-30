@@ -1,0 +1,136 @@
+.mod-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.footer-flex {
+  width: 1600px;
+  background: #2f303a;
+  padding: 60px 215px;
+}
+
+.data-footer {
+  list-style: none;
+  font-style: normal;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-address {
+  margin-right: 76px;
+  color: var(--white-text-color);
+}
+
+.footer-address__place {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 9px;
+}
+
+.footer-address__email,
+.footer-address__tel {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 9px;
+}
+
+.footer-address__email {
+  display: block;
+  margin-bottom: 9px;
+
+  &:hover,
+  &:focus {
+    color: var(--focus-hover-link-color);
+  }
+}
+.footer-address__tel {
+  margin: 0;
+
+  &:hover,
+  &:focus {
+    color: var(--focus-hover-link-color);
+  }
+}
+
+.social-icon-footer {
+  margin-right: 85px;
+}
+
+.social-icon-footer__icon {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background: #2196f3;
+  }
+}
+
+.form-footer__newsletter {
+  display: flex;
+}
+
+.form-footer__label {
+  display: none;
+}
+
+.form-footer__email {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  background-color: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 17px;
+  padding: 16px 15px;
+}
+
+.newsletter-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.78;
+  color: #ffffff;
+  background: #2196f3;
+  padding: 10px 0 10px 0;
+  border: 0;
+  border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.newsletter-button__icon {
+  margin-left: 24px;
+  fill: #ffffff;
+}
