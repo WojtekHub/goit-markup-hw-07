@@ -122,9 +122,9 @@
   margin-right: 10px;
 }
 
-.header-contact__item:hover .header-contact__icon {
+.header-contact__item:hover > .header-contact__icon {
   fill: #2196f3;
 }
-.header-contact__item:hover .header-contact__nav {
+.header-contact__item:hover > .header-contact__nav {
   color: var(--focus-hover-link-color);
 }

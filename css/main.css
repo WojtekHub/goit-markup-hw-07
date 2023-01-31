@@ -402,11 +402,11 @@ body {
   margin-right: 10px;
 }
 
-.header-contact__item:hover .header-contact__icon {
+.header-contact__item:hover > .header-contact__icon {
   fill: #2196f3;
 }
 
-.header-contact__item:hover .header-contact__nav {
+.header-contact__item:hover > .header-contact__nav {
   color: var(--focus-hover-link-color);
 }
 
@@ -417,7 +417,6 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/slider_img.jpg");
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/slider_img.jpg");
 }
-
 .slider__foto {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -431,7 +430,6 @@ body {
           align-items: center;
   padding: 200px 0 200px;
 }
-
 .slider__title {
   font-style: normal;
   font-weight: 900;
@@ -477,7 +475,6 @@ body {
   background: #e5e5e5;
   width: 1600px;
 }
-
 .articles__list {
   list-style: none;
   display: -webkit-box;
@@ -489,11 +486,20 @@ body {
   margin: 0;
   padding: 94px 215px;
 }
-
 .articles__list > .articles__item:not(:last-child) {
   margin-right: 30px;
 }
-
+.articles__svg {
+  width: 270px;
+  /* height: 120px; */
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 25px 100px 25px 100px;
+}
+.articles__icon {
+  display: block;
+}
 .articles__title {
   font-style: normal;
   font-weight: 700;
@@ -504,7 +510,6 @@ body {
   margin: 0;
   margin-bottom: 10px;
 }
-
 .articles__demo {
   font-style: normal;
   font-size: 14px;
@@ -512,19 +517,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color-demo-article);
   margin: 0;
-}
-
-.articles__svg {
-  width: 270px;
-  /* height: 120px; */
-  background: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
-  padding: 25px 100px 25px 100px;
-}
-
-.articles__icon {
-  display: block;
 }
 
 .section-title {
@@ -555,7 +547,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .what-we-do__list {
   list-style: none;
   display: -webkit-box;
@@ -565,11 +556,13 @@ body {
   margin-bottom: 94px;
   padding-left: 0;
 }
+.what-we-do__list > .what-we-do__item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .signature-back {
   position: relative;
 }
-
 .signature-back__title {
   position: absolute;
   bottom: 0;
@@ -585,10 +578,6 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
-}
-
-.what-we-do__list > .what-we-do__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .our-team {
