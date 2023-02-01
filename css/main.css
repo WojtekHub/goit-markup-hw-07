@@ -720,7 +720,7 @@ body {
   padding: 60px 215px;
 }
 
-.data-footer {
+.footer-list {
   list-style: none;
   font-style: normal;
   padding: 0;
@@ -734,49 +734,28 @@ body {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-
-.footer-address {
-  margin-right: 76px;
-  color: var(--white-text-color);
-}
-
-.footer-address__place {
+.footer-list__place {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-text-color);
   display: block;
   margin-bottom: 9px;
 }
-
-.footer-address__email,
-.footer-address__tel {
+.footer-list__email, .footer-list__tel {
+  display: block;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 9px;
 }
-
-.footer-address__email {
-  display: block;
-  margin-bottom: 9px;
-}
-.footer-address__email:hover, .footer-address__email:focus {
+.footer-list__email:hover, .footer-list__email:focus, .footer-list__tel:hover, .footer-list__tel:focus {
   color: var(--focus-hover-link-color);
 }
-
-.footer-address__tel {
-  margin: 0;
-}
-.footer-address__tel:hover, .footer-address__tel:focus {
-  color: var(--focus-hover-link-color);
-}
-
-.social-icon-footer {
-  margin-right: 85px;
-}
-
-.social-icon-footer__icon {
+.footer-list__icon {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
@@ -785,21 +764,18 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-icon-footer__icon:hover {
+.footer-list__icon:hover {
   background: #2196f3;
 }
-
-.form-footer__newsletter {
+.footer-list__newsletter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
-.form-footer__label {
+.footer-list__label {
   display: none;
 }
-
-.form-footer__email {
+.footer-list__emailNews {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -815,8 +791,7 @@ body {
   margin-right: 17px;
   padding: 16px 15px;
 }
-
-.newsletter-button {
+.footer-list__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -841,13 +816,12 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.newsletter-button:hover, .newsletter-button:focus {
+.footer-list__button:hover, .footer-list__button:focus {
   cursor: pointer;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
-.newsletter-button__icon {
+.footer-list__iconButton {
   margin-left: 24px;
   fill: #ffffff;
 }
